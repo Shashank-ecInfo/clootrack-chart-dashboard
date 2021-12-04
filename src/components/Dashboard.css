@@ -1,0 +1,6 @@
+.graph-wrapper {
+  height: 61%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

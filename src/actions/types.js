@@ -1,0 +1,4 @@
+// Dashboard chart data
+export const GET_CHART_DATA_REQUEST = "GET_CHART_DATA_REQUEST";
+export const GET_CHART_DATA_SUCCESS = "GET_CHART_DATA_SUCCESS";
+export const GET_CHART_DATA_FAILED = "GET_CHART_DATA_FAILED";

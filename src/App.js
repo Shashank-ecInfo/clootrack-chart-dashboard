@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import BarChart from "./components/BarChart";
+import configureStore from "./config/configureStore";
+import { Provider } from "react-redux";
+import PieChart from "./components/PieChart";
 
 function App() {
+  const store = configureStore();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <BarChart />
+        <PieChart />
+      </div>
+    </Provider>
   );
 }
 
